@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>RadioStation</title>
+</head>
+<body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $(".helpbutton").click(function(){
+        $("[id=help]").toggle();
+    });
+    $("[id=help]").hide();
+
+});
+</script>
+        
+<button class="helpbutton">Toggle help</button><br>
+
+    <b>Genre</b><br>
+    <a href="http://localhost:8080/demo/viewallgenre">View All Genres</a><span id ='help'><i> NIL </i></span><br>
+    <a href="http://localhost:8080/demo/addgenre">Add Genre</a><span id ='help'><i> name=bass </i></span><br>
+    <a href="http://localhost:8080/demo/deletegenre">Delete Genre</a><span id ='help'><i> name=bass </i></span><br>
+    <a href="http://localhost:8080/demo/updategenre">Update Genre</a><span id ='help'><i> id=1&newname=Jazz </i></span><br>
+    <br>
+    <b>Song</b><br>
+    <a href="http://localhost:8080/demo/viewallsong">View All Songs</a><span id ='help'><i> NIL </i></span><br>
+    <a href="http://localhost:8080/demo/songinfo">View Song Info</a><span id ='help'><i> id=1 </i></span><br>
+    <a href="http://localhost:8080/demo/addsong">Add Song</a><span id ='help'><i> name=Senbonsakura&genreid=1 </i></span><br>
+    <a href="http://localhost:8080/demo/deletesong">Delete Song</a><span id ='help'><i> id=1 </i></span><br>
+    <a href="http://localhost:8080/demo/updatesong">Update Song</a><span id ='help'><i> id=1&newname=Okkusenman&newgenreid=1 </i></span><br>
+    <br>
+    <b>Listener</b><br>
+    <a href="http://localhost:8080/demo/viewalllistener">View All Listeners</a><span id ='help'><i> NIL </i></span><br>
+    <a href="http://localhost:8080/demo/addlistener">Add Listener</a><span id ='help'><i> name=KizunaPoi </i></span><br>
+    <a href="http://localhost:8080/demo/deletelistener">Delete Listener</a><span id ='help'><i> id=1 </i></span><br>
+    <a href="http://localhost:8080/demo/updatelistener">Update Listener</a><span id ='help'><i> id=1&newname=MiraiAkari </i></span><br>
+    <br>
+    <b>ListenerGenre</b><br>
+    <a href="http://localhost:8080/demo/viewalllistenergenre">View All Listeners Favourite Genre</a><br>
+    <!--
+    <a href="http://localhost:8080/demo/addlistenergenre">Add Listener Favourite Genre</a><br>
+    <a href="http://localhost:8080/demo/deletelistenergenre">Delete Listener Favourite Genre</a><br>
+    -->
+
+</body>
+</html>
